@@ -1,0 +1,13 @@
+﻿name: Test skryptu PowerShell
+
+on: push
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Uruchom skrypt
+        shell: pwsh
+        run: .\hello.ps1
+
